@@ -1,0 +1,19 @@
+import random
+from turtle import *
+class Hexagon(Turtle):
+    def __init__(self,size,speed1,color):
+        Turtle.__init__(self)
+        self.speed(speed1)
+        self.color(color)
+        self.begin_poly()
+        for i in range(6):
+            self.forward(size)
+            self.left(60)
+            self.forward(size)
+
+        self.end_poly()
+        s=self.get_poly()
+        register_shape("hexagon",s)
+        self.clear()
+        self.shape("hexagon")
+pablo=Hexagon(40,0,"gray")

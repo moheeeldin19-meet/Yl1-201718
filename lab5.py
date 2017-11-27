@@ -1,5 +1,6 @@
 import random
-from turtle import Turtle,colormode
+from turtle import *
+colormode(255)
 class Square(Turtle):
     def __init__(self,size):
         Turtle.__init__(self)
