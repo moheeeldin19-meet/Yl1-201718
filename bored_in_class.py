@@ -8,4 +8,4 @@ while True:
     turtle.color(color)
     x=x+5
     turtle.forward(x)
-    turtle.right(172)
+    turtle.right(170)
